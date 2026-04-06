@@ -3,21 +3,26 @@ const menuToggle = document.getElementById("menuToggle");
 const sidebar = document.getElementById("sidebar");
 const closeSidebar = document.getElementById("closeSidebar");
 
-menuToggle?.addEventListener("click", () => sidebar.classList.add("active"));
-closeSidebar?.addEventListener("click", () => sidebar.classList.remove("active"));
+menuToggle?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  sidebar.classList.add("active");
+});
+
+closeSidebar?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  sidebar.classList.remove("active");
+});
 
 // Close sidebar when clicking outside
-document.addEventListener("click", e => {
+document.addEventListener("click", (e) => {
   if (
     sidebar.classList.contains("active") &&
     !sidebar.contains(e.target) &&
-    !menuToggle.contains(e.target)
+    !menuToggle?.contains(e.target)
   ) {
     sidebar.classList.remove("active");
   }
-});
-
-// Highlight active navbar link
+});// Highlight active navbar link
 const navLinks = document.querySelectorAll(".nav-links a");
 navLinks.forEach(link => {
   if (link.href === window.location.href) link.classList.add("active");
