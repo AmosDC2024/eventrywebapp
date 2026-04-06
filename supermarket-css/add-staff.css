@@ -366,6 +366,10 @@ body.dark-mode .staff-table th {
 
 body.dark-mode .staff-table td {
   color: #ddd;
+} 
+
+body.dark-mode .menu-toggle {
+  color: #fff !important;
 }
 
 /* ===== RESPONSIVE ===== */

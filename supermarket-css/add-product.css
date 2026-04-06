@@ -354,6 +354,10 @@ body.dark-mode .sidebar a:hover {
   }
 }
 
+body.dark-mode .menu-toggle {
+  color: #fff !important;
+}
+
 /* Extra small screens */
 @media (max-width: 480px) {
   .top-bar {
@@ -395,4 +399,4 @@ body.dark-mode .sidebar a:hover {
   .add-product p {
     font-size: 0.85rem;
   }
-}
+

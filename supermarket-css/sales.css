@@ -346,6 +346,10 @@ body.dark-mode .sales-table tr:nth-child(even) {
 
 body.dark-mode .sales-table tr:hover {
   background: #3a008f;
+} 
+
+body.dark-mode .menu-toggle {
+  color: #fff !important;
 }
 
 /* ===== RESPONSIVE MOBILE ===== */

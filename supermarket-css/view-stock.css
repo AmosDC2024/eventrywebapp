@@ -389,6 +389,10 @@ body.dark-mode .nav-links a:hover {
     display: block;
   }
 
+} 
+
+body.dark-mode .menu-toggle {
+  color: #fff !important;
 }
 
 
